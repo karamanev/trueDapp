@@ -9,19 +9,23 @@ import HomePage from '../HomePage.js'
 import AdminPage from '../../auth/AdminPage.js'
 import NewsPage from '../../news/NewsPage.js'
 import AddNewsPage from '../../news/AddNewsPage.js'
-import Categories from '../../news/Categories.js'
-import Logout from '../../auth/Logout'
+import CategoriesPage from '../../news/Categories.js'
+import CategoryPage from '../../news/Category'
+import LogoutPage from '../../auth/Logout'
+import AboutPage from '../../common/About'
 
 const Routes = () => (
     <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/login" component={LoginPage} />
-        <PrivateRoute exact path="/logout" component={Logout} />
+        <PrivateRoute exact path="/logout" component={LogoutPage} />
         <Route exact path="/register" component={RegisterPage} />
         <AdminRoute exact path="/admin" component={AdminPage} />
         <Route exact path="/news" component={NewsPage} />
         <PrivateRoute exact path="/news/add" component={AddNewsPage} />
-        <Route exact path="/news/categories" component={Categories} />
+        <Route exact path="/news/categories" component={CategoriesPage} />
+        <Route path="/news/category/:name" component={CategoryPage} />
+        <Route exact path="/about" component={AboutPage} />
     </Switch>
 )
 

@@ -27,7 +27,7 @@ export default class LoginPage extends Component {
             this.handleUserLogin
         )
     }
-    
+
     componentWillUnmount() {
         userStore.removeListener(
             userStore.eventTypes.USER_LOGGED_IN,
