@@ -1,0 +1,37 @@
+.submitArea {
+    background: #ddf9c0;
+    margin: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+.submitForm {
+    display: block;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.submitForm>label {
+    margin-top: 10px;
+}
+
+.submitForm>textarea {
+    resize: none;
+    height: 9em;
+}
+
+input {
+    width: 100px;
+    margin: 20px;
+    padding: 0px;
+}
+
+label{
+    margin: 20px;
+    
+}
+
+.errmsg{
+    margin:20px;
+    color: red;
+}

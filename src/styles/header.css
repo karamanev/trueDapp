@@ -1,0 +1,56 @@
+header {
+    position: relative;
+}
+
+.logo, .header {
+    font-size: 3em;
+}
+
+.headLink{
+    margin:20px;
+}
+
+h2{
+    margin:20px;
+    margin-left: 150px
+}
+
+h3{
+    margin:20px;
+    margin-left: 100px
+}
+
+
+#profile {
+    display: inline-block;
+    background: #ffffff;
+    text-align: right;
+    vertical-align: bottom;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#profile span {
+    padding: 5px 10px;
+}
+
+#profile a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#profile a:hover {
+    color: #000000;
+}
+
+p{
+    text-align: right;
+}
+
+.welcome{
+    margin:20px
+}
